@@ -1,0 +1,76 @@
+/* 1. Fondo con IMAGEN y centrado general */
+body {
+    margin: 0;
+    min-height: 100vh;
+    
+    /* Reemplazamos el degradado por imagen con una capa protectora azulada */
+    background: linear-gradient(rgba(26, 82, 118, 0.7), rgba(26, 82, 118, 0.7)), 
+                url('../Imagenes/fondo-colegio.jpg'); /* <-- CAMBIA EL NOMBRE AQUÍ */
+    
+    background-size: cover;       /* La imagen cubre toda la pantalla */
+    background-position: center;  /* Centra la foto */
+    background-attachment: fixed; /* Efecto Parallax (la foto no se mueve al scrollear) */
+    background-repeat: no-repeat;
+
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+}
+
+/* 2. Centrar y dar estilo al título principal */
+h1 {
+    color: white;
+    text-align: center;
+    max-width: 800px;
+    margin-bottom: 30px;
+    text-shadow: 3px 3px 10px rgba(0,0,0,0.5); /* Sombra más fuerte para resaltar sobre la foto */
+    font-size: 2.5rem;
+    padding: 0 20px;
+}
+
+/* 3. Ajuste de la cuadrícula (Grid) */
+.infraestructura {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    gap: 25px; 
+    padding: 20px;
+    max-width: 1000px; 
+    z-index: 2; /* Asegura que esté sobre el fondo */
+}
+
+/* 4. Estilo de los cuadros (Items) - EL EFECTO GLASS SE VE MEJOR CON FOTO */
+.item {
+    background-color: rgba(255, 255, 255, 0.85); /* Un poco más transparente */
+    backdrop-filter: blur(12px);               /* Desenfoque más intenso */
+    border-left: 8px solid #f1c40f;            
+    padding: 25px;
+    border-radius: 15px;                       
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    transition: transform 0.3s ease;           
+}
+
+.item:hover {
+    transform: translateY(-5px);
+    background-color: rgba(255, 255, 255, 1);
+}
+
+.item h3 {
+    color: #1a5276;
+    margin-top: 0;
+    font-size: 1.5rem;
+}
+
+.item p {
+    color: #222; /* Texto un poco más oscuro para mejor lectura */
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* 5. Responsive */
+@media (max-width: 768px) {
+    .infraestructura {
+        grid-template-columns: 1fr;
+    }
+}

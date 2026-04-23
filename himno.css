@@ -1,0 +1,56 @@
+/* 1. Fondo con el mismo degradado para mantener el contraste */
+.cuerpo-himno {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1a5276 0%, #3498db 100%);
+    background-attachment: fixed;
+    font-family: 'Georgia', serif; /* Una fuente más clásica para el himno */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+/* 2. Tarjeta del Himno */
+.tarjeta-himno {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+    border: 2px solid #f1c40f; /* Borde dorado para solemnidad */
+}
+
+/* 3. Títulos */
+h1 {
+    color: #1a5276;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.subtitulo {
+    color: #3498db;
+    font-style: italic;
+    margin: 30px 0 20px;
+    font-size: 1.5rem;
+}
+
+/* 4. Estilo del Coro (en negrita) */
+.coro p {
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #1a5276;
+    margin-bottom: 20px;
+}
+
+/* 5. Estilo de las Estrofas */
+.estrofas p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 25px;
+}

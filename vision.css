@@ -1,0 +1,40 @@
+/* Aplicamos el mismo degradado de Historia */
+.cuerpo-vision {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center; /* Centrado horizontal */
+    align-items: center;     /* Centrado vertical */
+    background: linear-gradient(135deg, #1a5276 0%, #3498db 100%);
+    background-attachment: fixed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* La tarjeta blanca */
+.contenedor-vision {
+    background-color: rgba(255, 255, 255, 0.9); /* Blanco con transparencia */
+    backdrop-filter: blur(10px);               /* Efecto difuminado */
+    padding: 50px;
+    max-width: 600px;                          /* Ancho controlado */
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.3);
+    text-align: center;                        /* Texto centrado para Visión */
+}
+
+/* Estilo del título */
+.contenedor-vision h1 {
+    color: #1a5276;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    border-bottom: 3px solid #3498db;
+    display: inline-block;
+    padding-bottom: 10px;
+}
+
+/* Estilo del párrafo */
+.contenedor-vision p {
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    text-align: justify; /* Mantiene el bloque de texto ordenado */
+}
